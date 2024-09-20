@@ -1,0 +1,49 @@
+using System;
+
+public class Malabad
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Input your grades: ");
+            Console.Write("English: ");
+              float English = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Math: ");
+              float Math = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Science: ");
+              float Science = Convert.ToInt32(Console.ReadLine());
+            Console.Write("MAPEH: ");
+              float MAPEH = Convert.ToInt32(Console.ReadLine());
+        
+        float sum = English + Math + Science + MAPEH; 
+        float average = sum / 4;
+        
+        Console.WriteLine("Average: " + average);
+        
+        if (average > 100)
+        {
+            Console.WriteLine("Invalid Grade");
+        }
+        else if (average >=98)
+        {   
+            Console.WriteLine("With Highest Honors");
+        }
+        else if (average >=95)
+        {   
+            Console.WriteLine("With High Honors");
+        }
+        else if (average >=90)
+        {   
+            Console.WriteLine("With Honors");
+        }
+        else if (average >=75)
+        {   
+            Console.WriteLine("Passed");
+        }
+        else if (average <=75)
+        {   
+            Console.WriteLine("Failed");
+        }
+        
+            
+    }
+}
